@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minWidth="600.0" minHeight="450.0" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ch.samt.qualityfitness.ViewWorkoutController">
+    <top>
+        <VBox spacing="10">
+            <padding><Insets top="15" left="15" right="15" bottom="10"/></padding>
+            <Label fx:id="titleLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+            <HBox spacing="30">
+                <Label fx:id="totalVolumeLabel"/>
+                <Label fx:id="totalSetsLabel"/>
+                <Label fx:id="totalRepsLabel"/>
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <TableView fx:id="tableView">
+            <BorderPane.margin>
+                <Insets top="15" right="15" bottom="15" left="15"/>
+            </BorderPane.margin>
+            <columns>
+                <TableColumn fx:id="exerciseNameColumn" text="Exercise" prefWidth="200"/>
+                <TableColumn fx:id="setsColumn" text="Sets" prefWidth="80"/>
+                <TableColumn fx:id="weightColumn" text="Weight" prefWidth="120"/>
+                <TableColumn fx:id="repsColumn" text="Reps" prefWidth="120"/>
+                <TableColumn fx:id="progressColumn" text="Progress" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

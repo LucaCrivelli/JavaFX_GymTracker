@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ch.samt.qualityfitness.TemplatePickerController">
+    <padding><Insets top="20" left="20" right="20" bottom="20"/></padding>
+
+    <Label text="Scegli un template per precompilare gli esercizi" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <Label fx:id="emptyLabel" text="Nessun template disponibile." visible="false" managed="false"/>
+    <ListView fx:id="templateList" prefHeight="200"/>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Inizia senza template" onAction="#onStartWithoutTemplate"/>
+        <Button text="Usa template" onAction="#onUseTemplate" defaultButton="true"/>
+    </HBox>
+</VBox>

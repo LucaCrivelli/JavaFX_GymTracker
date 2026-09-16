@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ch.samt.qualityfitness.TemplateExerciseEditController">
+    <padding><Insets top="20" left="20" right="20" bottom="20"/></padding>
+
+    <Label fx:id="titleLabel" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <GridPane hgap="10" vgap="10">
+        <Label text="Exercise" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <ComboBox fx:id="exerciseComboBox" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="220"/>
+
+        <Label text="Amount of sets" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Spinner fx:id="setsSpinner" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="100" editable="true"/>
+    </GridPane>
+
+    <Label text="Reps per set"/>
+    <ScrollPane fitToWidth="true" prefHeight="180">
+        <VBox fx:id="repsContainer" spacing="8"/>
+    </ScrollPane>
+
+    <Label fx:id="errorLabel" textFill="RED" wrapText="true" visible="false" managed="false"/>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Cancel" onAction="#onCancel"/>
+        <Button text="Save" onAction="#onSave" defaultButton="true"/>
+    </HBox>
+</VBox>
