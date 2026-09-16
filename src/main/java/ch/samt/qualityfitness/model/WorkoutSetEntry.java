@@ -1,4 +1,4 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.model;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;

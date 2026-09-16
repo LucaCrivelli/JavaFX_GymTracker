@@ -1,9 +1,9 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.dao;
 
-import ch.samt.qualityfitness.Database;
-import ch.samt.qualityfitness.Workout;
-import ch.samt.qualityfitness.WorkoutExerciseData;
-import ch.samt.qualityfitness.WorkoutExerciseData.SetData;
+import ch.samt.qualityfitness.db.Database;
+import ch.samt.qualityfitness.model.Workout;
+import ch.samt.qualityfitness.model.WorkoutExerciseData;
+import ch.samt.qualityfitness.model.WorkoutExerciseData.SetData;
 
 import java.sql.*;
 import java.time.LocalDateTime;

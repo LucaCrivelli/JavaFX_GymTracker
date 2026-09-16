@@ -1,4 +1,4 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.model;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

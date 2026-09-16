@@ -1,8 +1,8 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.controller;
 
-import ch.samt.qualityfitness.WorkoutEditController;
-import ch.samt.qualityfitness.WorkoutDao;
-import ch.samt.qualityfitness.Workout;
+import ch.samt.qualityfitness.WindowManager;
+import ch.samt.qualityfitness.dao.WorkoutDao;
+import ch.samt.qualityfitness.model.Workout;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

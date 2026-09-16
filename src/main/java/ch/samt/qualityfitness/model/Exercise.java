@@ -1,4 +1,4 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.model;
 
 public class Exercise {
 

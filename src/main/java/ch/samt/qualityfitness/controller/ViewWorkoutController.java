@@ -1,9 +1,12 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.controller;
 
-import ch.samt.qualityfitness.ExerciseDao;
-import ch.samt.qualityfitness.WorkoutDao;
-import ch.samt.qualityfitness.*;
-import ch.samt.qualityfitness.WorkoutExerciseData.SetData;
+import ch.samt.qualityfitness.WindowManager;
+import ch.samt.qualityfitness.dao.ExerciseDao;
+import ch.samt.qualityfitness.dao.WorkoutDao;
+import ch.samt.qualityfitness.model.Exercise;
+import ch.samt.qualityfitness.model.Workout;
+import ch.samt.qualityfitness.model.WorkoutExerciseData;
+import ch.samt.qualityfitness.model.WorkoutExerciseData.SetData;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -17,7 +20,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ViewWorkoutController {

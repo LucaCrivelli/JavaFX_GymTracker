@@ -1,10 +1,11 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.controller;
 
-import ch.samt.qualityfitness.ExerciseDao;
-import ch.samt.qualityfitness.WorkoutDao;
-import ch.samt.qualityfitness.*;
-import ch.samt.qualityfitness.WorkoutExerciseData.SetData;
 import ch.samt.qualityfitness.WindowManager;
+import ch.samt.qualityfitness.dao.ExerciseDao;
+import ch.samt.qualityfitness.dao.WorkoutDao;
+import ch.samt.qualityfitness.model.*;
+import ch.samt.qualityfitness.model.WorkoutExerciseData.SetData;
+import ch.samt.qualityfitness.dao.TemplateDao;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -15,7 +16,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.util.StringConverter;
 import javafx.util.converter.IntegerStringConverter;
 
 import java.io.IOException;
@@ -129,7 +129,7 @@ public class WorkoutEditController {
     }
 
     private void applyTemplate(Template template) {
-        var templateDao = new ch.samt.qualityfitness.TemplateDao();
+        var templateDao = new TemplateDao();
         for (TemplateExerciseEntry entry : templateDao.getTemplateExercises(template.getId())) {
             ExerciseBlock block = addExerciseBlock(entry.getExerciseId(), entry.getExerciseName());
             for (int reps : entry.getRepsPerSet()) {

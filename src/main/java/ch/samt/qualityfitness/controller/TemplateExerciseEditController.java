@@ -1,7 +1,7 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.controller;
 
-import ch.samt.qualityfitness.Exercise;
-import ch.samt.qualityfitness.TemplateExerciseEntry;
+import ch.samt.qualityfitness.model.Exercise;
+import ch.samt.qualityfitness.model.TemplateExerciseEntry;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

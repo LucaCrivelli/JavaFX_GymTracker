@@ -11,7 +11,7 @@
 
 <BorderPane minWidth="600.0" minHeight="500.0" xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="ch.samt.qualityfitness.ProgressController">
+            fx:controller="ch.samt.qualityfitness.controller.ProgressController">
     <top>
         <Label fx:id="titleLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;">
             <BorderPane.margin><Insets top="15" left="15" right="15" bottom="10"/></BorderPane.margin>

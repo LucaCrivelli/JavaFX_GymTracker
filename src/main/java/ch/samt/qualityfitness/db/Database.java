@@ -1,4 +1,4 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

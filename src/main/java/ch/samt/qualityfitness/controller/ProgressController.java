@@ -1,8 +1,8 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.controller;
 
-import ch.samt.qualityfitness.ProgressDao;
-import ch.samt.qualityfitness.Exercise;
-import ch.samt.qualityfitness.ProgressEntry;
+import ch.samt.qualityfitness.dao.ProgressDao;
+import ch.samt.qualityfitness.model.Exercise;
+import ch.samt.qualityfitness.model.ProgressEntry;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;

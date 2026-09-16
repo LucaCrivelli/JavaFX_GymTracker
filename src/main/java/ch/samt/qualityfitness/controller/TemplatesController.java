@@ -1,8 +1,8 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.controller;
 
-import ch.samt.qualityfitness.TemplateDao;
-import ch.samt.qualityfitness.Template;
 import ch.samt.qualityfitness.WindowManager;
+import ch.samt.qualityfitness.dao.TemplateDao;
+import ch.samt.qualityfitness.model.Template;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

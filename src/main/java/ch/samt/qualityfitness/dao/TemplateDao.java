@@ -1,8 +1,8 @@
-package ch.samt.qualityfitness;
+package ch.samt.qualityfitness.dao;
 
-import ch.samt.qualityfitness.Database;
-import ch.samt.qualityfitness.Template;
-import ch.samt.qualityfitness.TemplateExerciseEntry;
+import ch.samt.qualityfitness.db.Database;
+import ch.samt.qualityfitness.model.Template;
+import ch.samt.qualityfitness.model.TemplateExerciseEntry;
 
 import java.sql.*;
 import java.util.ArrayList;
