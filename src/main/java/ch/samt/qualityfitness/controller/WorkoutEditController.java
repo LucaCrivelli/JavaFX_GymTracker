@@ -343,8 +343,6 @@ public class WorkoutEditController {
 
         boolean exercisesChanged = exerciseBlocks.stream()
                 .anyMatch(b -> b.sets.stream().anyMatch(s -> !s.isEmpty()));
-        // Nota: per semplicita' consideriamo "modificato" se in modalita' Add ci sono esercizi con dati,
-        // o se in modalita' Edit sono stati aggiunti/rimossi blocchi rispetto al caricamento iniziale.
 
         return basicChanged || (existingWorkout == null && exercisesChanged) || (existingWorkout != null);
     }
