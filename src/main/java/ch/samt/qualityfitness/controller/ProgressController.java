@@ -108,6 +108,7 @@ public class ProgressController {
         }
         double averageIncrease = (double) totalIncrease / (allTimeChronological.size() - 1);
         int lastVolume = allTimeChronological.get(allTimeChronological.size() - 1).getTotalVolume();
-        return (int) Math.round(lastVolume + averageIncrease);
+        int predicted = (int) Math.round(lastVolume + averageIncrease);
+        return Math.max(predicted, 0);   // <-- riga modificata: mai sotto zero
     }
 }
